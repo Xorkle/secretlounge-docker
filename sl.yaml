@@ -1,0 +1,12 @@
+# Telegram bot token
+bot_token: "CHANGE_ME"
+enable_signing: true
+
+# supported db types: json, sqlite
+# both take a single argument which is the database path
+database: [sqlite, "sl.db"]
+
+# relay contacts
+allow_contacts: false
+# relay arbitrary documents (gifs always work)
+allow_documents: true

@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  sl:
+    container_name: sl
+    image: sl
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/London
+    hostname: sl
+    build: .
+    volumes:
+      - ./sl.db:/home/sl/secretlounge-ng/sl.db
+      - ./sl.yaml:/home/sl/secretlounge-ng/config.yaml
