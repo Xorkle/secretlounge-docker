@@ -1,7 +1,7 @@
 FROM alpine
 RUN apk add python3 git
 RUN adduser -u 1000 -D sl
-COPY ./src secretlounge-ng
+COPY ./src /home/sl/secretlounge-ng
 RUN chown -Rv sl:sl /home/sl
 USER sl
 WORKDIR /home/sl/
