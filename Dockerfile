@@ -1,5 +1,5 @@
 FROM alpine
-RUN apk add python3 git sqlite
+RUN apk add python3 git
 RUN adduser -u 1000 -D sl
 USER sl
 WORKDIR /home/sl/
